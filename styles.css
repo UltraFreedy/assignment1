@@ -1,0 +1,157 @@
+/* Reset Root */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+.header{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* image banner */
+.img-banner{
+  width: 100%;
+  height: 180px;
+}
+
+.img-content{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+}
+
+/* form */
+.form-container{
+  display: grid;
+  gap: 8px;
+}
+
+.form-container .form-text{
+  font-weight: 400 ;
+  padding-block-start: 0.5rem ;
+}
+
+.form-container .text-title{
+  color: #0C1421;
+  font-size: 1.5rem;
+  margin-block: 8px ;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.form-container .text-subtitle{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #313957;
+  padding-block-end: 8px;
+}
+
+/* form content */
+.form-content{
+  display: grid;
+  gap: 8px;
+}
+
+.form-content label{
+  color: #0C1421;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.form-content input{
+  background-color: #F7FBFF;
+  color: #8897AD;
+  height: 2rem;
+  padding-inline: 10px;
+  border: 1px solid #D4D7E3;
+  border-radius: 8px;
+}
+
+.form-content .forget-text{
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 14px;
+  place-self: end;
+  padding-block: 6px;
+  color:#1E4AE9;
+}
+
+.form-content .button{
+  cursor: pointer;
+  padding: 10px 12px;
+  background-color: #162d3a;
+  border: none;
+  border-radius: 12px;
+}
+
+.form-content .button-text{
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 1rem;
+}
+
+.form-content .text-signup{
+  font-weight: 400;
+  font-size: 1rem;
+  place-self: center;
+  padding-block-start: 10px;
+}
+
+.form-content a{
+  text-decoration: none;
+  color:#1E4AE9;
+}
+
+.form-container .footer{
+  place-self: center;
+  margin-block-start: 5rem;
+  color: #959CB6;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+/* media query */
+@media only screen and (min-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .form-container{
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+  }
+  .form-text .text-subtitle{
+    padding-block: 20px;
+  }
+  .form-container .footer{
+    padding-block-start: 20px;
+    font-size: 0.9rem;
+  }
+  /*image banner*/
+  .img-banner{
+    width: 40%;
+    height: 100%;
+  }
+}
